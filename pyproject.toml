@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cstimer-visualizer"
+version = "0.1.0"
+description = ""
+authors = ["Manuel Floriano Vázquez"]
+readme = "README.md"
+packages = [
+    { include = "cstimer_visualizer", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.12"
+seaborn = "^0.13.2"
+pandas = "^2.2.3"
+
+[tool.poetry.dev-dependencies]
+lazy_type_hint = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
